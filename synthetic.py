@@ -1,6 +1,6 @@
 import numpy as np
 
-from medusa import medusa_cpe, medusa_cpi
+import medusa
 
 np.random.seed(0)
 
@@ -26,7 +26,7 @@ def toy_cpe():
     C[30] = 0
     C[30, 2] = 1.
 
-    S, P, exectimes = medusa_cpe.medusa(C, s0, nk=10, alpha=0.7, q=0.25)
+    S, P, exectimes = medusa.medusa_cpe(C, s0, nk=10, alpha=0.7, q=0.25)
     return S, P, exectimes
 
 
@@ -45,7 +45,7 @@ def toy_cpi():
     # simulate object with very strong but unspecific (relative to the pivots) associations
     C[80] = 100
 
-    S, P, exectimes = medusa_cpi.medusa(C, s0, nk=10)
+    S, P, exectimes = medusa.medusa_cpi(C, s0, nk=10)
     return S, P, exectimes
 
 
