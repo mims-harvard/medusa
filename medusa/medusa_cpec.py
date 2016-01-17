@@ -16,13 +16,12 @@
 
 from operator import itemgetter
 from collections import defaultdict
+import logging
+import time
 
 import numpy as np
 from scipy.special import gammaln
 from scipy.integrate import quad
-
-import logging
-import time
 
 
 __version__ = '0.1'

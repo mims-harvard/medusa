@@ -15,13 +15,12 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from operator import itemgetter
+import logging
+import time
 
 import numpy as np
 from scipy.special import gammaln
 from scipy.integrate import quad
-
-import logging
-import time
 
 
 __version__ = '0.1'
