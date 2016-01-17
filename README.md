@@ -1,9 +1,11 @@
 Medusa
 ======
  
-Medusa is an approach to detect size-`k` modules of objects that, taken together, appear most significant to another set of objects. 
+Medusa is an approach to detect size-`k` modules of objects (`candidate objects`) that, taken together, appear most significant to another set of objects (`pivot objects`). 
 
-Medusa operates on large-scale collections of heterogeneous data sets and explicitly distinguishes between diverse data semantics. It builds on [collective matrix factorization](http://dx.doi.org/10.1109/TPAMI.2014.2343973) to derive different semantics, and it formulates the growing of the modules as a submodular optimization program. Medusa is flexible in choosing or combining the semantic meanings, and provides theoretical guarantees about the detection quality. 
+Medusa operates on *large collections of heterogeneous data sets* and explicitly distinguishes between diverse data semantics. It builds on [collective matrix factorization](http://dx.doi.org/10.1109/TPAMI.2014.2343973) to derive different semantics, and it formulates the growing of the modules as a submodular optimization program. Medusa is flexible in choosing or combining the semantic meanings, and provides theoretical guarantees about the detection quality.
+
+*Large heterogeneous data collections* contain interactions between variety of objects, such as genes, chemicals, molecular signatures, diseases, pathways and environmental exposures. Often, any pair of objects---like, a gene and a disease---can be related in different ways, for example, directly via gene-disease associations or indirectly via functional annotations, chemicals and pathways, yielding different semantic meanings.
 
 This repository contains supplementary material for *Jumping across biomedical contexts using compressive data fusion* by Marinka Zitnik and Blaz Zupan.
  
