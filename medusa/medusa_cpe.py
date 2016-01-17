@@ -184,9 +184,13 @@ def medusa(C, s0, nk, alpha=_DEF_ALPHA, q=_DEF_Q, return_itr2scores=False):
         toc = time.time()
         exectimes.append(toc - tic)
 
-        _log.info('[%3d] fit: %0.5f | object: %d | p-value: %6.3e | '
-                  'secs: %.5f | s_itr: %s' % (
-            itr, fit[itr], S[-1], P[-1], exectimes[-1], ', '.join(map(str, s0))
+        # _log.info('[%3d] fit: %0.5f | object: %d | p-value: %6.3e | '
+        #           'secs: %.5f | s_itr: %s' % (
+        #     itr, fit[itr], S[-1], P[-1], exectimes[-1], ', '.join(map(str, s0))
+        # ))
+
+        _log.info('[%3d] fit: %0.5f | object: %d | p-value: %6.3e | secs: %.5f' % (
+            itr, fit[itr], S[-1], P[-1], exectimes[-1]
         ))
 
     _log.info('[end] non-monotone: %d' % np.sum(np.diff(fit) < 0))
