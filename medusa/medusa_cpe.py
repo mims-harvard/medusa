@@ -74,9 +74,7 @@ def pvalue(nCkq, C, s0, k, kq, ns0, weights):
 
 def medusa(C, s0, nk, alpha=_DEF_ALPHA, q=_DEF_Q, return_itr2scores=False):
     """
-    MEDUSA algorithm to compute k-maximally significant
-    distant module.
-
+    MEDUSA algorithm to estimate `nk`-maximally significant module to the pivots `s0`.
 
     Parameters
     ----------

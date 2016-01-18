@@ -81,8 +81,7 @@ def kl(C, b, k):
 
 def medusa(C, s0, nk, beta=_DEF_BETA, return_itr2scores=False):
     """
-    MEDUSA algorithm to compute k-maximally significant
-    distant module.
+    MEDUSA algorithm to compute `nk`-maximally significant module to the pivots `s0`.
 
 
     Parameters
