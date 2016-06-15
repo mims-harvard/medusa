@@ -7,7 +7,7 @@ Medusa operates on *large collections of heterogeneous data sets* and explicitly
 
 *Large heterogeneous data collections* contain interactions between variety of objects, such as genes, chemicals, molecular signatures, diseases, pathways and environmental exposures. Often, any pair of objects---like, a gene and a disease---can be related in different ways, for example, directly via gene-disease associations or indirectly via functional annotations, chemicals and pathways, yielding different semantic meanings.
 
-This repository contains supplementary material for *Jumping across biomedical contexts using compressive data fusion* by Marinka Zitnik and Blaz Zupan.
+This repository contains supplementary material for [*Jumping across biomedical contexts using compressive data fusion*](http://bioinformatics.oxfordjournals.org/cgi/content/long/32/12/i90) by Marinka Zitnik and Blaz Zupan.
  
  
 Dependencies
@@ -46,12 +46,12 @@ Citing
     @article{Zitnik2016,
       title     = {Jumping across biomedical contexts using compressive data fusion},
       author    = {Zitnik, Marinka and Zupan, Blaz},
-      journal   = {},
-      volume    = {},
-      number    = {},
-      pages     = {},
-      year      = {},
-      publisher = {}
+      journal   = {Bioinformatics},
+      volume    = {32},
+      number    = {12},
+      pages     = {90-100},
+      year      = {2016},
+      publisher = {Oxford Journals}
     }
     
     
